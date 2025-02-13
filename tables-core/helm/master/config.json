@@ -1,0 +1,21 @@
+{
+  "server": {
+    "addr": ":9090",
+    "name": "sberx",
+    "version": "1.0",
+    "timeout": "30s"
+  },
+  "metric": {
+    "addr": ":8080"
+  },
+  "tracer": {
+    "host": "127.0.0.1",
+    "port": "6831"
+  },
+  "metadata": {
+    "outgoing_size": 30
+  },
+  "gulmarketdb": {
+    "url": "host=gulmarketdb.c7e8mi6yon64.eu-central-1.rds.amazonaws.com port=5432 sslmode=disable database=postgres user=postgres password=Uekmvfhrtn2024+"
+  }
+}
