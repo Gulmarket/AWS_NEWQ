@@ -1,0 +1,1 @@
+ALTER TABLE pro_users ADD COLUMN account INT NOT NULL DEFAULT 0;
