@@ -1,0 +1,9 @@
+ALTER TABLE plantations
+    ALTER COLUMN description DROP NOT NULL,
+    ALTER COLUMN country DROP NOT NULL,
+    ALTER COLUMN city DROP NOT NULL,
+    ALTER COLUMN logo_url DROP NOT NULL,
+    ALTER COLUMN work_schedule DROP NOT NULL,
+    ALTER COLUMN name DROP NOT NULL,
+    DROP COLUMN latitude,
+    DROP COLUMN longitude;
