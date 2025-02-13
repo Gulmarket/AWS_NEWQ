@@ -1,0 +1,10 @@
+.idea/
+*.svg
+*.zip
+bin/
+*.zip
+/bin
+.env
+vendor/
+cmd/tmp/
+build/
