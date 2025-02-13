@@ -1,0 +1,66 @@
+{
+  "name": "gul-market-application",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "ultra start:all",
+    "start:pro": "pnpm --filter gul-market-pro start",
+    "start:plantation": "pnpm --filter gul-market-plantation start",
+    "start:all": "pnpm --filter gul-market-pro start | pnpm --filter gul-market-plantation start",
+    "build": "ultra --recursive build",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "update": "pnpm update --interactive --recursive --latest"
+  },
+  "ultra": {
+    "concurrent": [
+      "start:all"
+    ]
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@pmmmwh/react-refresh-webpack-plugin": "0.5.11",
+    "@svgr/webpack": "8.1.0",
+    "@types/node": "20.9.1",
+    "@typescript-eslint/eslint-plugin": "7.8.0",
+    "@typescript-eslint/parser": "7.8.0",
+    "compression-webpack-plugin": "10.0.0",
+    "css-loader": "6.8.1",
+    "css-minimizer-webpack-plugin": "5.0.1",
+    "eslint": "9.2.0",
+    "file-loader": "6.2.0",
+    "fork-ts-checker-webpack-plugin": "9.0.2",
+    "html-webpack-plugin": "5.5.3",
+    "kill-port": "1.6.1",
+    "mini-css-extract-plugin": "2.7.6",
+    "nodemon": "3.0.1",
+    "nodemon-webpack-plugin": "4.8.2",
+    "postcss-loader": "7.3.3",
+    "postcss-preset-env": "9.3.0",
+    "prettier": "3.2.5",
+    "react-refresh": "0.14.0",
+    "react-refresh-typescript": "2.0.9",
+    "source-map-loader": "4.0.1",
+    "ts-loader": "9.5.1",
+    "typescript": "5.2.2",
+    "ultra-runner": "3.10.5",
+    "url-loader": "4.1.1",
+    "webpack": "5.89.0",
+    "webpack-cli": "5.1.4",
+    "webpack-dev-server": "4.15.1",
+    "webpack-merge": "5.10.0"
+  },
+  "packageManager": "pnpm@8.10.5",
+  "pnpm": {
+    "updateConfig": {
+      "ignoreDependencies": [
+        "kill-port"
+      ]
+    }
+  },
+  "dependencies": {
+    "@2gis/mapgl": "1.47.1",
+    "@2gis/mapgl-ruler": "2.0.8",
+    "@pbe/react-yandex-maps": "1.2.5",
+    "react-router-dom": "6.23.1"
+  }
+}
